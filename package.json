@@ -1,8 +1,8 @@
 {
-	"name": "gitlens",
+	"name": "gitlens-tanji",
 	"displayName": "GitLens — Git supercharged",
 	"description": "Supercharge Git within VS Code — Visualize code authorship at a glance via Git blame annotations and CodeLens, seamlessly navigate and explore Git repositories, gain valuable insights via rich visualizations and powerful comparison commands, and so much more",
-	"version": "14.0.1",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.78.0"
 	},
@@ -10278,17 +10278,17 @@
 			"extension/context": [
 				{
 					"command": "gitlens.getStarted",
-					"when": "extension =~ /^eamodio.gitlens?$/ && extensionStatus == installed",
+					"when": "extension =~ /^eamodio.gitlens/ && extensionStatus == installed",
 					"group": "9_gitlens@1"
 				},
 				{
 					"command": "gitlens.showWelcomePage",
-					"when": "extension =~ /^eamodio.gitlens?$/ && extensionStatus == installed",
+					"when": "extension =~ /^eamodio.gitlens/ && extensionStatus == installed",
 					"group": "9_gitlens@2"
 				},
 				{
 					"command": "gitlens.showSettingsPage",
-					"when": "extension =~ /^eamodio.gitlens?$/ && extensionStatus == installed",
+					"when": "extension =~ /^eamodio.gitlens/ && extensionStatus == installed",
 					"group": "9_gitlens@3"
 				}
 			],

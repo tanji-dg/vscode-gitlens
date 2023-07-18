@@ -20,13 +20,18 @@
 			"type": "npm",
 			"script": "build",
 			"group": "build",
-			"problemMatcher": ["$ts-checker-webpack", "$ts-checker-eslint-webpack"]
+			"problemMatcher": [
+				"$ts-checker-webpack",
+				"$ts-checker-eslint-webpack"
+			]
 		},
 		{
 			"type": "npm",
 			"script": "lint",
 			"group": "build",
-			"problemMatcher": ["$eslint-stylish"]
+			"problemMatcher": [
+				"$eslint-stylish"
+			]
 		},
 		{
 			"type": "npm",
@@ -39,7 +44,10 @@
 			"presentation": {
 				"group": "watchers"
 			},
-			"problemMatcher": ["$ts-checker-webpack-watch", "$ts-checker-eslint-webpack-watch"]
+			"problemMatcher": [
+				"$ts-checker-webpack-watch",
+				"$ts-checker-eslint-webpack-watch"
+			]
 		},
 		{
 			"label": "Run (local web)",
@@ -56,7 +64,10 @@
 		{
 			"label": "Run (vscode.dev)",
 			"group": "test",
-			"dependsOn": ["npm: web:serve", "npm: web:tunnel"],
+			"dependsOn": [
+				"npm: web:serve",
+				"npm: web:tunnel"
+			],
 			"dependsOrder": "parallel",
 			"problemMatcher": []
 		},
@@ -90,7 +101,14 @@
 			"presentation": {
 				"group": "watchers"
 			},
-			"problemMatcher": "$tsc-watch" //["$ts-checker-webpack-watch", "$ts-checker-eslint-webpack-watch"]
+			"problemMatcher": "$tsc-watch"
+		},
+		{
+			"type": "npm",
+			"script": "package",
+			"problemMatcher": [],
+			"label": "npm: package",
+			"detail": "vsce package --yarn"
 		}
 	]
 }
